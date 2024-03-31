@@ -89,7 +89,7 @@ public class ResourceLeakTest
 
     public void t_supplier_lambdaExpr_notAssigned(TestAutoCloseable t)
     {
-        /* CORRECT (maybe warning is in the wrong place?)
+        /* CORRECT (but misplaced)
          * expected: WARNING
          * actual:   WARNING
          */
@@ -99,7 +99,7 @@ public class ResourceLeakTest
 
     public void t_supplier_lambdaExpr_localVariable(TestAutoCloseable t)
     {
-        /* CORRECT (maybe warning is in the wrong place?)
+        /* CORRECT (but misplaced)
          * expected: WARNING
          * actual:   WARNING
          */
@@ -329,7 +329,7 @@ public class ResourceLeakTest
 
     public void t_function_lambdaExpr_notAssigned(String str)
     {
-        /* CORRECT (maybe warning is in the wrong place?)
+        /* CORRECT (but misplaced)
          * expected: WARNING
          * actual:   WARNING
          */
@@ -339,7 +339,7 @@ public class ResourceLeakTest
 
     public void t_function_lambdaExpr_localVariable(String str)
     {
-        /* CORRECT (maybe warning is in the wrong place?)
+        /* CORRECT (but misplaced)
          * expected: WARNING
          * actual:   WARNING
          */
